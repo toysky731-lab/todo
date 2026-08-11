@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>私隱政策 · 做咗未</title>
+<style>
+  :root { --bg:#fff; --fg:#1a1a1a; --dim:#5b6e74; --line:#e4e8ea; --tint:#0B7280; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e1112; --fg:#eaf0f1; --dim:#93a2a7; --line:#232a2c; --tint:#45C8D6; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0 auto; max-width:38rem; padding:3rem 1.25rem 6rem;
+    background:var(--bg); color:var(--fg);
+    font:16px/1.75 -apple-system,"PingFang HK","PingFang TC",system-ui,sans-serif;
+  }
+  h1 { font-size:1.6rem; line-height:1.3; margin:0 0 .25rem; }
+  h2 { font-size:1.1rem; margin:2.5rem 0 .5rem; }
+  .meta { color:var(--dim); font-size:.9rem; margin:0 0 2rem; }
+  p, li { color:var(--fg); }
+  ul { padding-left:1.25rem; }
+  li { margin:.35rem 0; }
+  strong { font-weight:600; }
+  a { color:var(--tint); }
+  hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+  .lead { font-size:1.05rem; }
+  code { font:13px ui-monospace,SFMono-Regular,Menlo,monospace; background:var(--line); padding:.1rem .3rem; border-radius:4px; }
+</style>
+</head>
+<body>
+
+<h1>私隱政策</h1>
+<p class="meta">做咗未（Done Yet?）· 最後更新 2026 年 8 月 11 日</p>
+
+<p class="lead"><strong>你寫落清單嘅文字，永遠唔會離開你部電話。</strong></p>
+
+<h2>你嘅事項</h2>
+<ul>
+  <li>全部只存喺你部裝置本機（SwiftData）。</li>
+  <li><strong>冇帳戶、冇登入、冇伺服器、冇雲端、冇 iCloud 同步。</strong></li>
+  <li>事項嘅標題、次序、完成時間都唔會上傳到任何地方，包括我。</li>
+  <li>刪除一件事：向左掃。刪除全部：移除 app —— 資料同 app 一齊消失，冇任何副本留喺其他地方。</li>
+</ul>
+
+<h2>匿名使用數據</h2>
+<p>App 會收集匿名嘅使用數據，用嚟知道邊啲功能真係有人用。服務商係 <a href="https://posthog.com">PostHog</a>，資料存喺歐盟。</p>
+
+<p><strong>收集：</strong></p>
+<ul>
+  <li>開啟過邊個畫面（清單／時間軸／設定）。</li>
+  <li>動作發生咗（新增、完成、取消完成、刪除、改名、拖拉排序、切換時間軸模式、切換語言、打賞）。</li>
+  <li>數字同布林值：清單剩幾多件、一件事寫低咗幾日才完成、係唔係清空咗清單、打賞揀咗邊個檔位。</li>
+  <li>裝置型號、iOS 版本、app 版本、語言、地區（由 PostHog SDK 自動加）。</li>
+</ul>
+
+<p><strong>唔收集：</strong></p>
+<ul>
+  <li><strong>任何事項嘅文字。</strong>App 內部有一個白名單，未申報嘅欄位喺離開裝置之前就會被丟棄。</li>
+  <li>姓名、電郵、電話、通訊錄、位置、相片、廣告識別碼（IDFA）。</li>
+  <li>閃退報告（crash data）。</li>
+  <li>任何可以識別你身分嘅識別碼。App 從來唔會呼叫 <code>identify</code>，冇任何用戶檔案。</li>
+</ul>
+
+<p><strong>唔會追蹤你。</strong>冇 IDFA、冇 App Tracking Transparency 提示、冇跨 app 或跨網站追蹤、唔會同任何第三方資料合併。</p>
+
+<h2>設定</h2>
+<p>你揀嘅語言存喺裝置嘅 <code>UserDefaults</code>。就只有呢一項。</p>
+
+<h2>打賞</h2>
+<p>「請我飲杯咖啡」係自願打賞，經 Apple 嘅 In-App Purchase 處理。<strong>付款資料由 Apple 處理，我完全接觸唔到</strong> —— 我見到嘅只係「有人打賞咗，係細／中／大嗰個檔位」。打賞唔會解鎖任何功能。</p>
+
+<h2>廣告</h2>
+<p>冇廣告，冇廣告 SDK，唔會賣你嘅資料，永遠都唔會。</p>
+
+<h2>兒童</h2>
+<p>App 唔會刻意收集兒童資料。因為根本冇帳戶、冇任何個人資料輸入欄位，所以亦冇兒童資料可以收集。</p>
+
+<h2>刪除你嘅資料</h2>
+<p>你嘅內容全部喺你部機，移除 app 就完全刪除。</p>
+<p>使用數據係匿名嘅 —— 冇任何欄位可以將佢連回你本人，所以我亦無法「找出你嘅紀錄」去刪除。如果你想我完全停止收集，可以喺下面聯絡我，我會處理。</p>
+
+<h2>政策更新</h2>
+<p>如果收集嘅內容有變，我會更新呢一頁同上面嘅日期，並喺 app 更新說明講明。</p>
+
+<h2>聯絡</h2>
+<p>有任何私隱問題，經 <a href="./support.html">支援頁</a> 聯絡我。</p>
+
+<hr>
+<p class="meta">This page is also the English privacy policy: the app stores your items only on your
+device, never uploads their text, collects anonymous product analytics (screens opened, counts,
+ages, booleans) via PostHog in the EU, collects no crash data, no advertising identifier and no
+personal information, does not track you across apps or sites, shows no ads, and never sells data.
+Tips are handled by Apple; payment details are never visible to the developer. Deleting the app
+deletes everything.</p>
+
+</body>
+</html>
