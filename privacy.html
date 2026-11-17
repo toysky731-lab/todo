@@ -31,7 +31,7 @@
 <body>
 
 <h1>私隱政策</h1>
-<p class="meta">做咗未（Done Yet?）· 最後更新 2026 年 8 月 11 日</p>
+<p class="meta">待辦（To Do）· 最後更新 2026 年 11 月 17 日</p>
 
 <p class="lead"><strong>你寫落清單嘅文字，永遠唔會離開你部電話。</strong></p>
 
@@ -39,8 +39,8 @@
 <ul>
   <li>全部只存喺你部裝置本機（SwiftData）。</li>
   <li><strong>冇帳戶、冇登入、冇伺服器、冇雲端、冇 iCloud 同步。</strong></li>
-  <li>事項嘅標題、次序、完成時間都唔會上傳到任何地方，包括我。</li>
-  <li>刪除一件事：向左掃。刪除全部：移除 app —— 資料同 app 一齊消失，冇任何副本留喺其他地方。</li>
+  <li>事項同恆常嘅嘢嘅標題、子項目、次序、到期日、完成時間都唔會上傳到任何地方，包括我。</li>
+  <li>刪除一件事：向左掃，喺今日、清單同歷史都得。刪除全部：移除 app —— 資料同 app 一齊消失，冇任何副本留喺其他地方。</li>
 </ul>
 
 <h2>匿名使用數據</h2>
@@ -48,9 +48,9 @@
 
 <p><strong>收集：</strong></p>
 <ul>
-  <li>開啟過邊個畫面（清單／時間軸／設定）。</li>
-  <li>動作發生咗（新增、完成、取消完成、刪除、改名、拖拉排序、切換時間軸模式、切換語言、打賞）。</li>
-  <li>數字同布林值：清單剩幾多件、一件事寫低咗幾日才完成、係唔係清空咗清單、打賞揀咗邊個檔位。</li>
+  <li>開啟過邊個畫面（今日／歷史／清單／恆常／設定）。</li>
+  <li>動作發生咗（新增、完成、取消完成、刪除、改名、拖拉排序、設定進度、設定或清除到期日、轉排序方式、處理「未做完」嘅事、新增或刪除恆常嘅嘢、記低做咗一次、切換語言、打賞、app 請求顯示評分框）。</li>
+  <li>數字同布林值：清單剩幾多件、一件事寫低咗幾日才完成、係唔係清空咗清單、到期日離今日幾多日（唔係日期本身）、揀咗邊種排序、恆常嘅嘢係每星期定每月同要做幾多次、打賞揀咗邊個檔位。</li>
   <li>裝置型號、iOS 版本、app 版本、語言、地區（由 PostHog SDK 自動加）。</li>
 </ul>
 
@@ -64,8 +64,14 @@
 
 <p><strong>唔會追蹤你。</strong>冇 IDFA、冇 App Tracking Transparency 提示、冇跨 app 或跨網站追蹤、唔會同任何第三方資料合併。</p>
 
+<h2>版本檢查</h2>
+<p>每次打開 app，佢會由呢個網站（GitHub Pages）讀一個細設定檔，睇吓呢個版本仲用唔用得。個請求唔會帶任何你嘅資料；GitHub 會好似任何網站咁見到部機嘅 IP 地址。讀唔到嘅話 app 照常用。</p>
+
+<h2>評分</h2>
+<p>用咗一段時間之後，app 可能會顯示 Apple 嘅評分框。你畀嘅評分同評語直接交畀 Apple，唔經我。為咗決定幾時問，app 會喺你部機記低累計用咗幾耐，呢個數字唔會上傳。</p>
+
 <h2>設定</h2>
-<p>你揀嘅語言存喺裝置嘅 <code>UserDefaults</code>。就只有呢一項。</p>
+<p>以下幾樣存喺裝置嘅 <code>UserDefaults</code>，全部只留喺你部機：你揀嘅語言、清單嘅排序方式、睇過邊啲一次性提示、累計用咗 app 幾耐，同埋喺邊個版本問過你評分。</p>
 
 <h2>打賞</h2>
 <p>「請我飲杯咖啡」係自願打賞，經 Apple 嘅 In-App Purchase 處理。<strong>付款資料由 Apple 處理，我完全接觸唔到</strong> —— 我見到嘅只係「有人打賞咗，係細／中／大嗰個檔位」。打賞唔會解鎖任何功能。</p>
@@ -91,8 +97,13 @@
 device, never uploads their text, collects anonymous product analytics (screens opened, counts,
 ages, booleans) via PostHog in the EU, collects no crash data, no advertising identifier and no
 personal information, does not track you across apps or sites, shows no ads, and never sells data.
-Tips are handled by Apple; payment details are never visible to the developer. Deleting the app
-deletes everything.</p>
+Analytics include which screens were opened and actions such as setting a due date (as a number
+of days from today, never the date), changing the sort order and resolving unfinished items. The
+app may show Apple's rating sheet after some use; time spent in the app is counted on the device
+for that and never uploaded. Language, sort order and seen-hint flags are kept on the device only.
+Tips are handled by Apple; payment details are never visible to the developer. On opening, the app also reads
+a small settings file from this site (GitHub Pages) to check the version is still supported; the
+request carries none of your data. Deleting the app deletes everything.</p>
 
 </body>
 </html>
